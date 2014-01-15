@@ -17,6 +17,10 @@ class rpcbind::params {
                }
            }
        }
+       'Debian': {
+           $rpcbind_package = "rpcbind"
+           $rpcbind_service = "rpcbind"
+       }
        default: {
        }
    }

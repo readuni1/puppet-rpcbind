@@ -29,6 +29,10 @@ Contributors
 Release Notes
 -------------
 
+**0.1.1**
+
+* Add support for Debian OS family
+
 **0.1.0**
 
 * Initial version

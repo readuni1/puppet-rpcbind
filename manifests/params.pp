@@ -7,7 +7,7 @@ class rpcbind::params {
                    $rpcbind_service = "rpcbind"
                }
                default: {
-                   if ($operatingsystemrelease < 6) {
+                   if (versioncmp($operatingsystemrelease,'6') < 0) {
                        $rpcbind_package = "portmap"
                        $rpcbind_service = "portmap"
                    } else {
@@ -24,7 +24,7 @@ class rpcbind::params {
                    $rpcbind_service = "rpcbind"
                }
                default: {	# SLE[SD]
-                   if ($::lsbmajdistrelease < 11) {
+                   if (versioncmp($::lsbmajdistrelease,'11') < 0) {
                        $rpcbind_package = "portmap"
                        $rpcbind_service = "portmap"
                    } else {
